@@ -5,6 +5,7 @@ module.exports = function(app) {
 
     // GET route for /api/friends returns friendsData.
     app.get('/api/friends', function(req, res) {
+		
         res.json(friendsData);
     });
     // POST route for /api/friends takes in the new data and responds with the most compatible match.
